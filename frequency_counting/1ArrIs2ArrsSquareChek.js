@@ -22,7 +22,7 @@ const freqConut = (arr1, arr2) => {
   }
 
 
-  // first loop for counting frequenscy and creating keys and freq count as value
+  
   for (let j = 0; j < arr2.length; j++) {
     if (!arr2Obj[arr2[j]]) {
       // if keys does not exists then it will create
@@ -48,3 +48,6 @@ const freqConut = (arr1, arr2) => {
 
 result = freqConut(arr1, arr2)
 console.log(result)
+
+// time complexity is O(n)
+// space complexity is  O(n)
