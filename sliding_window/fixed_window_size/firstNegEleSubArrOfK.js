@@ -14,17 +14,17 @@ const firstNegativeSlidingWindow = (arr2, k2, n2) => {
     while(windowEnd<=n2){
         //   console.log(arr2[windowEnd])
         if(arr2[windowEnd]<0){
-            list.push(arr2[windowEnd])
+            list.push(arr2[windowEnd]) // -1,
             
         }
         if(windowEnd-windowStart+1==k2){
             if(list.length==0){
                 ans.push(0)
             }else{
-                let new1 =list.shift()
-                ans.push(new1)
-                if(arr2[windowStart]==new1){
-                    delete list
+                
+                ans.push(list.shift())
+                if(arr2[windowStart-k2+1]==list.shift()){
+                    list.pop()
                 }
 
             }
@@ -36,7 +36,7 @@ const firstNegativeSlidingWindow = (arr2, k2, n2) => {
    
         
 }
-// console.log(firstNegativeSlidingWindow(arr2, k2, n2))
+console.log(firstNegativeSlidingWindow(arr2, k2, n2))
 
 // =====================GeeksForGeeks======================================
 // / javascript implementation to find the
@@ -83,3 +83,4 @@ const fn1=(arr,k,n)=>{
         return ans
 }
 // console.log(fn1(arr2,k2,n2))
+

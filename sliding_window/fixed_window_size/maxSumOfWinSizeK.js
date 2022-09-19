@@ -74,4 +74,4 @@ function slidingWindowSelf(arr,k){
     console.log(maxSum)
 }
 
-console.log(slidingWindowSelf(arr1,k))
+// console.log(slidingWindowSelf(arr1,k))

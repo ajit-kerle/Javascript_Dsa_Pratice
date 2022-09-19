@@ -1,6 +1,6 @@
 // Count number of substrings with exactly K distinct characters
 
-// let str='aba'
+// let str='abc'
 // let str='aba'
 let str='aa'
 let k=1
@@ -51,6 +51,7 @@ function solutionForK1(str){
     }
     console.log(ans)
 }
+// console.log(solutionForK1(str,k))
 //============================================
 
 function countNumOfSubStrExactKDistinct(str,k){
